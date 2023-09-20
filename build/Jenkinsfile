@@ -1,0 +1,44 @@
+pipeline {
+  agent any
+
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '30', artifactNumToKeepStr: '5'))
+  }
+
+  triggers {
+    cron '@midnight'
+  }
+
+  stages {
+    stage('NPM:swagger-ui-ivy') {
+      steps {
+        script {
+          catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
+            docker.build('node', '-f build/Dockerfile .').inside {
+              sh 'npm install && npm run build'
+            }
+          }
+          archiveArtifacts artifacts: 'dist/**', allowEmptyArchive: false
+          currentBuild.description = "<a href='${BUILD_URL}artifact/dist/index.html'>swagger-ui</a>"
+        }
+      }
+    }
+    stage('Deploy') {
+      when {
+        expression { isReleaseOrMasterBranch() && currentBuild.changeSets.size() > 0 }
+      }
+      steps {
+        script {
+          docker.image('maven:3.8.6-eclipse-temurin-17').inside {
+            maven cmd: 'clean deploy'
+          }
+          archiveArtifacts 'target/swagger-ui-ivy-*.jar'
+        }
+      }
+    }
+  }
+}
+
+def isReleaseOrMasterBranch() {
+  return env.BRANCH_NAME == 'master' || env.BRANCH_NAME.startsWith('release/') 
+}

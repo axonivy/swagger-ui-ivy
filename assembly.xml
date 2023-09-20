@@ -13,7 +13,7 @@
   <fileSets>
     <fileSet>
       <directory>dist</directory>
-      <outputDirectory>./META-INF/resources/monaco-yaml-ivy</outputDirectory>
+      <outputDirectory>./META-INF/resources/api-browser</outputDirectory>
     </fileSet>
   </fileSets>
 </assembly>

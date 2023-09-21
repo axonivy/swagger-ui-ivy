@@ -4,7 +4,7 @@ import { SwaggerUIBundle, SwaggerUIStandalonePreset } from 'swagger-ui-dist';
 
 SwaggerUI({
   dom_id: '#swagger-ui',
-  url: "https://petstore.swagger.io/v2/swagger.json",
+  url: "https://petstore3.swagger.io/api/v3/openapi.json",
   configUrl: 'config.yaml',
   deepLinking: true,
   presets: [

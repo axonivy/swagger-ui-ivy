@@ -1,6 +1,6 @@
 import 'swagger-ui/dist/swagger-ui.css';
 import SwaggerUI from "swagger-ui";
-import { SwaggerUIBundle, SwaggerUIStandalonePreset } from 'swagger-ui-dist';
+import SwaggerUIStandalonePreset from "swagger-ui/dist/swagger-ui-standalone-preset"
 
 SwaggerUI({
   dom_id: '#swagger-ui',
@@ -8,11 +8,11 @@ SwaggerUI({
   configUrl: 'config.yaml',
   deepLinking: true,
   presets: [
-    SwaggerUIBundle.presets.apis,
+    SwaggerUI.presets.apis,
     SwaggerUIStandalonePreset
   ],
   plugins: [
-    SwaggerUIBundle.plugins.DownloadUrl
+    SwaggerUI.plugins.DownloadUrl
   ],
   layout: "StandaloneLayout"
 })

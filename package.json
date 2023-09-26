@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "swagger-ui": "^5.7.2",
-    "swagger-ui-dist": "^5.7.2",
     "vite": "^4.4.9"
   }
 }

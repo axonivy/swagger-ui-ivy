@@ -1,13 +1,12 @@
-
 import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   const config = {
-    build: { 
-      outDir: 'dist', 
+    build: {
+      outDir: 'dist',
       chunkSizeWarningLimit: 5000
     },
-    base: './',
+    base: './'
   };
   return config;
 });

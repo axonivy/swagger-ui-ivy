@@ -13,5 +13,8 @@
   "dependencies": {
     "swagger-ui": "^5.7.2",
     "vite": "^4.4.9"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3"
   }
 }

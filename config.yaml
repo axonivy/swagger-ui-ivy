@@ -3,5 +3,9 @@ urls: [
 {
   url: "/openapi-dev.json",
   name: "demo-app-dev"
+},
+{
+  url: "/openapi-test.json",
+  name: "test"
 }
 ]

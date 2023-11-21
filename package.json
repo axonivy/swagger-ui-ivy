@@ -11,7 +11,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "swagger-ui": "^5.10.0",
+    "swagger-ui": "^5.10.1",
     "vite": "^5.0.0"
   },
   "devDependencies": {

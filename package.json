@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "swagger-ui": "^5.10.3",
-    "vite": "^5.0.2"
+    "vite": "^5.0.3"
   },
   "devDependencies": {
     "prettier": "^3.1.0"

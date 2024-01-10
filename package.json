@@ -8,13 +8,15 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "test": "npx playwright test"
   },
   "dependencies": {
     "swagger-ui": "^5.7.2",
     "vite": "^4.4.9"
   },
   "devDependencies": {
+    "@playwright/test": "1.50.1",
     "prettier": "^3.0.3"
   }
 }

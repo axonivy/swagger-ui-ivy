@@ -12,8 +12,8 @@
     "test": "npx playwright test"
   },
   "dependencies": {
-    "react": "18.3.1",
-    "react-dom": ">=18.0.0 < 19",
+    "react": "19.0.0",
+    "react-dom": ">=18.0.0 < 20",
     "swagger-ui": "^5.18.3",
     "vite": "6.0.11"
   },

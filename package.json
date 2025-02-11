@@ -9,7 +9,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "sbom": "npx --yes @cyclonedx/cyclonedx-npm --output-format JSON --output-file bom.json"
   },
   "dependencies": {
     "react": "18.3.1",

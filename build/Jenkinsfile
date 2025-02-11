@@ -37,11 +37,11 @@ pipeline {
     }
     stage('Deploy') {
       when {
-        expression { isReleaseOrMasterBranch() && currentBuild.changeSets.size() > 0 }
+        expression { isReleasingBranch() && currentBuild.changeSets.size() > 0 }
       }
       steps {
         script {
-          docker.image('maven:3.8.6-eclipse-temurin-17').inside {
+          docker.build('maven-build', '-f build/Dockerfile.maven .').inside {
             maven cmd: 'clean deploy'
           }
           archiveArtifacts 'target/swagger-ui-ivy-*.jar'
@@ -49,8 +49,4 @@ pipeline {
       }
     }
   }
-}
-
-def isReleaseOrMasterBranch() {
-  return env.BRANCH_NAME == 'master' || env.BRANCH_NAME.startsWith('release/') 
 }

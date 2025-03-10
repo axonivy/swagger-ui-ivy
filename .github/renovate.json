@@ -10,5 +10,8 @@
       ],
       "automerge": true
     }
+  ],
+  "schedule": [
+    "* 0-4 * * 1"
   ]
 }

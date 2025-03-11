@@ -9,14 +9,6 @@
         "devDependencies"
       ],
       "automerge": true
-    },
-    {
-      "matchPackageNames": [
-        "@playwright/test",
-        "mcr.microsoft.com/playwright"
-      ],
-      "automerge": true,
-      "groupName": "playwright.tests"
     }
   ],
   "schedule": [

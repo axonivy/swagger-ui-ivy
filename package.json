@@ -1,8 +1,8 @@
 {
-  "name": "swagger-ui-ivy",
+  "name": "@axonivy/swagger-ui-ivy",
   "version": "1.0.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "private": true,
   "type": "module",

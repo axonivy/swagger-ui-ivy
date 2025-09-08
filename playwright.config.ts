@@ -11,7 +11,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: 'http://localhost:5173',
+    baseURL: process.env.CI ? 'http://localhost:4173' : 'http://localhost:5173',
     trace: 'on-first-retry',
   },
 
@@ -23,8 +23,8 @@ export default defineConfig({
   ],
 
   webServer: {
-    command: 'npm run start',
-    url: 'http://localhost:5173',
+    command: process.env.CI ? 'npm run serve' : 'npm run dev',
+    url: process.env.CI ? 'http://localhost:4173' : 'http://localhost:5173',
     stdout: 'pipe',
     stderr: 'pipe',
     reuseExistingServer: !process.env.CI,

@@ -14,6 +14,10 @@
     <fileSet>
       <directory>dist</directory>
       <outputDirectory>./META-INF/resources/api-browser</outputDirectory>
+      <excludes>
+        <exclude>config.yaml</exclude>
+        <exclude>openapi-dev.json</exclude>
+      </excludes>
     </fileSet>
   </fileSets>
 </assembly>

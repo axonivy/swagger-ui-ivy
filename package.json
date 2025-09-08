@@ -7,7 +7,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
+    "serve": "vite preview",
     "build": "vite build",
     "test": "npx playwright test",
     "sbom": "npx --yes @cyclonedx/cyclonedx-npm --output-format JSON --output-file bom.json --omit dev",

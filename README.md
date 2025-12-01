@@ -7,7 +7,7 @@ Useful commands:
 pnpm install
 
 # serve in dev mode
-pnpm run serve
+pnpm run dev
 
 # build for production
 pnpm run build

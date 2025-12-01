@@ -23,7 +23,7 @@ export default defineConfig({
   ],
 
   webServer: {
-    command: process.env.CI ? 'npm run serve' : 'npm run dev',
+    command: process.env.CI ? 'pnpm run serve' : 'pnpm run dev',
     url: process.env.CI ? 'http://localhost:4173' : 'http://localhost:5173',
     stdout: 'pipe',
     stderr: 'pipe',

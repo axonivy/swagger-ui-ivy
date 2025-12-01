@@ -1,16 +1,14 @@
 # Axon Ivy Swagger-Ui
 
-NPM packaging for Swagger UI.
-
 Useful commands:
 
 ```bash
 # fetch all dependencies
-npm install
+pnpm install
 
 # serve in dev mode
-npm run start
+pnpm run serve
 
 # build for production
-npm run build
+pnpm run build
 ```

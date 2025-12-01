@@ -13,9 +13,9 @@
     "dev": "vite",
     "serve": "vite preview",
     "build": "vite build",
-    "test": "npx playwright test",
-    "sbom": "npx --yes @cyclonedx/cyclonedx-npm --output-format JSON --output-file bom.json --omit dev",
-    "sbom-dev": "npx --yes @cyclonedx/cyclonedx-npm --output-format JSON --output-file bom-dev.json"
+    "test": "playwright test",
+    "sbom": "pnpm dlx @cyclonedx/cdxgen -t pnpm --required-only",
+    "sbom:dev": "pnpm dlx @cyclonedx/cdxgen -t pnpm --output bom-dev.json"
   },
   "dependencies": {
     "react": "^18.3.0",

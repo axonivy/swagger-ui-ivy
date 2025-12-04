@@ -24,9 +24,15 @@ importers:
       '@types/node':
         specifier: ^24.0.0
         version: 24.10.1
+      '@types/swagger-ui':
+        specifier: ^5.21.1
+        version: 5.21.1
       prettier:
         specifier: ^3.4.2
         version: 3.7.1
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
       vite:
         specifier: 7.2.4
         version: 7.2.4(@types/node@24.10.1)
@@ -419,6 +425,9 @@ packages:
 
   '@types/ramda@0.30.2':
     resolution: {integrity: sha512-PyzHvjCalm2BRYjAU6nIB3TprYwMNOUY/7P/N8bSzp9W/yM2YrtGtAnnVtaCNSeOZ8DzKyFDvaqQs7LnWwwmBA==}
+
+  '@types/swagger-ui@5.21.1':
+    resolution: {integrity: sha512-DUmUH59eeOtvAqcWwBduH2ws0cc5i95KHsXCS4FsOfbUq/clW8TN+HqRBj7q5p9MSsSNK43RziIGItNbrAGLxg==}
 
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
@@ -1006,6 +1015,11 @@ packages:
 
   types-ramda@0.30.1:
     resolution: {integrity: sha512-1HTsf5/QVRmLzcGfldPFvkVsAdi1db1BBKzi7iW3KBUlOICg/nKnFS+jGqDJS3YD8VsWbAh7JiHeBvbsw8RPxA==}
+
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
 
   undici-types@7.16.0:
     resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
@@ -1612,6 +1626,8 @@ snapshots:
   '@types/ramda@0.30.2':
     dependencies:
       types-ramda: 0.30.1
+
+  '@types/swagger-ui@5.21.1': {}
 
   '@types/trusted-types@2.0.7':
     optional: true
@@ -2268,6 +2284,8 @@ snapshots:
   types-ramda@0.30.1:
     dependencies:
       ts-toolbelt: 9.6.0
+
+  typescript@5.9.3: {}
 
   undici-types@7.16.0: {}
 

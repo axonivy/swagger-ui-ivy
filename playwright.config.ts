@@ -1,17 +1,15 @@
 import { defineConfig, devices } from '@playwright/test';
 
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
+const URL = process.env.CI ? 'http://localhost:4173' : 'http://localhost:5173';
+
 export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
-  reporter: 'html',
+  reporter: process.env.CI ? [['junit', { outputFile: 'report.xml' }], ['list']] : 'html',
   use: {
-    baseURL: process.env.CI ? 'http://localhost:4173' : 'http://localhost:5173',
+    baseURL: URL,
     trace: 'on-first-retry',
   },
 
@@ -24,7 +22,7 @@ export default defineConfig({
 
   webServer: {
     command: process.env.CI ? 'pnpm run serve' : 'pnpm run dev',
-    url: process.env.CI ? 'http://localhost:4173' : 'http://localhost:5173',
+    url: URL,
     stdout: 'pipe',
     stderr: 'pipe',
     reuseExistingServer: !process.env.CI,

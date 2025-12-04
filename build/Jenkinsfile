@@ -10,7 +10,7 @@ pipeline {
   }
 
   stages {
-    stage('NPM:swagger-ui-ivy') {
+    stage('build') {
       steps {
         script {
           catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
@@ -23,7 +23,7 @@ pipeline {
         }
       }
     }    
-    stage('NPM:test') {
+    stage('test') {
       steps {
         script {
           catchError(buildResult: 'UNSTABLE', stageResult: 'UNSTABLE') {
@@ -31,7 +31,10 @@ pipeline {
               sh 'pnpm run test'
             }
           }
-          archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: false
+          archiveArtifacts artifacts: 'test-results/**', allowEmptyArchive: false
+          withChecks('Tests') {
+            junit testDataPublishers: [[$class: 'StabilityTestDataPublisher']], testResults: 'report.xml'
+          }
         }
       }
     }

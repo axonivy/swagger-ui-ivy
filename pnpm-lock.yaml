@@ -23,13 +23,13 @@ importers:
         version: 1.57.0
       '@types/node':
         specifier: ^22.5.3
-        version: 22.19.3
+        version: 22.19.6
       prettier:
         specifier: ^3.4.2
         version: 3.7.4
       vite:
         specifier: 6.4.1
-        version: 6.4.1(@types/node@22.19.3)
+        version: 6.4.1(@types/node@22.19.6)
 
 packages:
 
@@ -420,8 +420,8 @@ packages:
   '@types/hast@3.0.4':
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
 
-  '@types/node@22.19.3':
-    resolution: {integrity: sha512-1N9SBnWYOJTrNZCdh/yJE+t910Y128BoyY+zBLWhL3r0TYzlTmFdXrPwHL9DyFZmlEXNQQolTZh3KHV31QDhyA==}
+  '@types/node@22.19.6':
+    resolution: {integrity: sha512-qm+G8HuG6hOHQigsi7VGuLjUVu6TtBo/F05zvX04Mw2uCg9Dv0Qxy3Qw7j41SidlTcl5D/5yg0SEZqOB+EqZnQ==}
 
   '@types/prismjs@1.26.5':
     resolution: {integrity: sha512-AUZTa7hQ2KY5L7AmtSiqxlhWxb4ina0yd8hNbl4TWuqnv/pFP0nDMb3YrfSBf4hJVGLh2YEIBfKaBW/9UEl6IQ==}
@@ -1649,7 +1649,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@22.19.3':
+  '@types/node@22.19.6':
     dependencies:
       undici-types: 6.21.0
 
@@ -2330,7 +2330,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  vite@6.4.1(@types/node@22.19.3):
+  vite@6.4.1(@types/node@22.19.6):
     dependencies:
       esbuild: 0.25.0
       fdir: 6.4.4(picomatch@4.0.2)
@@ -2339,7 +2339,7 @@ snapshots:
       rollup: 4.40.0
       tinyglobby: 0.2.13
     optionalDependencies:
-      '@types/node': 22.19.3
+      '@types/node': 22.19.6
       fsevents: 2.3.3
 
   web-streams-polyfill@3.3.3: {}

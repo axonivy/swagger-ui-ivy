@@ -23,7 +23,7 @@
     "swagger-ui": "^5.18.3"
   },
   "devDependencies": {
-    "@playwright/test": "1.58.1",
+    "@playwright/test": "1.58.2",
     "prettier": "^3.0.3",
     "vite": "^7.2.4"
   }

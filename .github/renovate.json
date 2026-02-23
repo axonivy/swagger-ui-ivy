@@ -6,9 +6,16 @@
   ],
   "packageRules": [
     {
-      "matchDepTypes": ["devDependencies"],
-      "automerge": true,
-      "labels": ["dependencies", "automerged"]
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "automerge": true
+    },
+    {
+      "matchPackageNames": [
+        "pnpm"
+      ],
+      "automerge": true
     }
   ]
 }

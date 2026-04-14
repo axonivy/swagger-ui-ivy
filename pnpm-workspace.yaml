@@ -1,6 +1,6 @@
-trustPolicy: no-downgrade
-trustPolicyIgnoreAfter: 43200 # minutes (30 days)
+blockExoticSubdeps: true
 minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
   - "@axonivy/*"
-blockExoticSubdeps: true
+trustPolicy: no-downgrade
+trustPolicyIgnoreAfter: 43200 # minutes (30 days)

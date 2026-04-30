@@ -1,5 +1,10 @@
-blockExoticSubdeps: true
-minimumReleaseAge: 1440
+allowBuilds:
+  "@scarf/scarf": false
+  "@tree-sitter-grammars/tree-sitter-yaml": false
+  core-js-pure: false
+  esbuild: false
+  tree-sitter: false
+  tree-sitter-json: false
 minimumReleaseAgeExclude:
   - "@axonivy/*"
 trustPolicy: no-downgrade

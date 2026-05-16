@@ -18,8 +18,8 @@
     "sbom:dev": "pnpm sbom --sbom-format cyclonedx > bom-dev.json"
   },
   "dependencies": {
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "swagger-ui": "^5.28.0"
   },
   "devDependencies": {

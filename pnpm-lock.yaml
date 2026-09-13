@@ -23,13 +23,13 @@ importers:
         version: 1.63.0
       '@types/node':
         specifier: ^24.13.3
-        version: 24.13.3
+        version: 24.13.4
       prettier:
         specifier: ^3.9.6
         version: 3.9.6
       vite:
         specifier: 8.2.2
-        version: 8.2.2(@types/node@24.13.3)
+        version: 8.2.2(@types/node@24.13.4)
 
 packages:
 
@@ -287,8 +287,8 @@ packages:
   '@types/hast@3.0.5':
     resolution: {integrity: sha512-rp/ezSWaD1m44dPKICGhiskI13nVr7qTloFwDa/IYkhhf5nzwP+zIQcIJh3WIFSBOy/H1PzB40jPjMDksN4F+g==}
 
-  '@types/node@24.13.3':
-    resolution: {integrity: sha512-Dh8vAsV36ig5wa9OX4pXvMc9D3Veibfw2wix0CUwYODLD8nkj9UsLjASr49nPg+2eKzxhBV+v7L8pXvT4e639Q==}
+  '@types/node@24.13.4':
+    resolution: {integrity: sha512-YJ7EqCstVTzIr0fMr7qul/977en+pQHrfmuKIo6Zr9i75Be21dr3MovcfvGtyvi2HAUrRerWps5sMO9I7WaxDw==}
 
   '@types/prismjs@1.26.6':
     resolution: {integrity: sha512-vqlvI7qlMvcCBbVe0AKAb4f97//Hy0EBTaiW8AalRnG/xAN5zOiWWyrNqNXeq8+KAuvRewjCVY1+IPxk4RdNYw==}
@@ -1575,7 +1575,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@24.13.3':
+  '@types/node@24.13.4':
     dependencies:
       undici-types: 7.18.2
 
@@ -2302,7 +2302,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  vite@8.2.2(@types/node@24.13.3):
+  vite@8.2.2(@types/node@24.13.4):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.5
@@ -2310,7 +2310,7 @@ snapshots:
       rolldown: 1.2.5
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 24.13.3
+      '@types/node': 24.13.4
       fsevents: 2.3.3
 
   web-tree-sitter@0.24.5:

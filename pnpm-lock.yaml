@@ -16,7 +16,7 @@ importers:
         version: 18.3.1(react@18.3.1)
       swagger-ui:
         specifier: ^5.33.0
-        version: 5.33.0(debug@4.4.3)
+        version: 5.33.1(debug@4.4.3)
     devDependencies:
       '@playwright/test':
         specifier: 1.63.0
@@ -911,8 +911,8 @@ packages:
     resolution: {integrity: sha512-MrMYADBRg7nY5Y+CY9E76/Zm2LSghhln4wNNU6jGn3bNZ76BRQ3hQRyCHCyJK9tVgTDUmYCcYgYWrwGruL1mIw==}
     engines: {node: '>=22'}
 
-  swagger-ui@5.33.0:
-    resolution: {integrity: sha512-E93oVGnUfNuxtBKhhJdglYc6nfPqihQ1kgwh8I707pU+hOfR4DA+twpJJdkqSQ42asVqIaklYvej3M23HScLfg==}
+  swagger-ui@5.33.1:
+    resolution: {integrity: sha512-JA18ZGrQqupJkfr8GTmpYVmLJWXV0dC6PGwLaD6q3inJ+4up022A/B0/wPzmiDcDrxnLAKro9lsxXzTs6cW+lA==}
 
   tinyglobby@0.2.17:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
@@ -2169,7 +2169,7 @@ snapshots:
       - debug
       - supports-color
 
-  swagger-ui@5.33.0(debug@4.4.3):
+  swagger-ui@5.33.1(debug@4.4.3):
     dependencies:
       '@babel/runtime-corejs3': 7.29.7
       '@scarf/scarf': 1.4.0

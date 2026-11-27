@@ -4,6 +4,9 @@
     "local>axonivy/renovate-config:npm",
     "security:minimumReleaseAgeNpm"
   ],
+  "baseBranchPatterns": [
+    "master",
+  ],
   "packageRules": [
     {
       "matchDepTypes": [
